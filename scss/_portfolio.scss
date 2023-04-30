@@ -1,0 +1,104 @@
+.portfolio_container {
+  overflow: initial;
+}
+
+// .portfolio_content {
+//   padding: 0;
+// }
+
+.portfolio_img {
+  width: 100%;
+  border-radius: 0.5rem;
+  justify-self: center;
+  filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2));
+}
+
+.portfolio_title {
+  font-size: var(--h3-font-size);
+  margin: var(--mb-0-5) 0;
+}
+
+.portfolio_description {
+  margin-bottom: var(--mb-0-75);
+  height: 40px;
+}
+
+.portfolio_button {
+  transition: 0.3s;
+}
+
+.portfolio_button:hover .button_icon {
+  transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--title-color-dark);
+}
+
+.swiper-button-prev {
+  left: -1.8rem;
+  top: 10rem;
+}
+
+.swiper-button-next {
+  right: -1.8rem;
+  top: 10rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color-dark);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
+// .disabled_swiper_button {
+//   opacity: 0;
+//   cursor: auto;
+//   pointer-events: none;
+// }
+
+/* =========== breakpoints =============== */
+/* for large devices */
+@media screen and (max-width: 992px) {
+  .swiper-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .swiper-button-prev {
+    top: 8rem;
+  }
+
+  .swiper-button-next {
+    top: 8rem;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    padding: 0 0.15rem;
+  }
+}

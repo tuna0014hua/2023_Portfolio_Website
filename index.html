@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- reset(normalize) css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 起始式 -->
+    <div class="wrapper">
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav_logo">Tuna</a>
+
+                <div class="nav_menu" id="navMenu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="uil uil-estate nav_icon"></i>首頁
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user nav_icon"></i>
+                                個人簡介
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-file-alt nav_icon"></i>
+                                專業技能
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#services" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon"></i>
+                                相關經驗
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-scenery nav_icon"></i>
+                                作品集
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <i class="uil uil-times nav_close" id="navClose"></i>
+                </div>
+
+                <div class="nav_btns">
+                    <!-- theme change btn -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav_toggle" id="navToggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- =================== 首頁 =================== -->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_content grid">
+                        <div class="home_social">
+                            <!-- linkedin -->
+                            <a href="https://www.linkedin.com/in/wei-yun-hua-700164233/" class="home_social-icon"
+                                target="_blank">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <!-- codepen -->
+                            <a href="https://codepen.io/tuna1104/pens/public" class="home_social-icon" target="_blank">
+                                <i class='bx bxl-codepen'></i>
+                            </a>
+
+                            <!-- github -->
+                            <a href="https://github.com/tuna0014hua" class="home_social-icon" target="_blank">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                        <!-- home_social end -->
+
+                        <div class="home_img" data-aos="fade-down"></div>
+
+                        <div class="home_data" data-aos="fade-up">
+                            <h1 class="home_title">華偉芸 <span>(Tuna)</span>
+                                <svg width="36" height="36" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="home_hand">
+                                    <path
+                                        d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
+                                        fill="#FFDD67"></path>
+                                    <path
+                                        d="M33.8996 4.88018C33.6746 4.80518 33.5246 4.80518 33.2996 4.80518C34.6496 5.33018 35.3996 6.75518 35.0996 8.25518L30.2996 32.9302L31.3496 33.1552L36.1496 8.48018C36.5246 6.75518 35.4746 5.18018 33.8996 4.88018Z"
+                                        fill="#EBA352"></path>
+                                    <path
+                                        d="M19.4995 32.7802H26.5495V5.55518C26.5495 3.53018 24.9745 1.80518 23.0245 1.80518C21.1495 1.80518 19.4995 3.45518 19.4995 5.55518V32.7802Z"
+                                        fill="#FFDD67"></path>
+                                    <path
+                                        d="M23.0995 1.80518C22.9495 1.80518 22.7245 1.80518 22.5745 1.88018C24.2995 2.18018 25.5745 3.68018 25.5745 5.55518V32.8552H26.6245V5.55518C26.6245 3.45518 25.0495 1.80518 23.0995 1.80518Z"
+                                        fill="#EBA352"></path>
+                                    <path
+                                        d="M15.7495 32.7054L21.7495 31.1304L15.2245 6.30541C14.7745 4.58041 13.0495 3.53041 11.3995 3.90541C9.74948 4.35541 8.77448 6.08041 9.22448 7.80541L15.7495 32.7054Z"
+                                        fill="#FFDD67"></path>
+                                    <path
+                                        d="M11.3995 3.90541L10.9495 4.13041C12.4495 4.05541 13.7995 5.03041 14.2495 6.60541L20.7745 31.4304L21.8245 31.1304L15.2245 6.30541C14.7745 4.58041 13.0495 3.53041 11.3995 3.90541Z"
+                                        fill="#EBA352"></path>
+                                    <path
+                                        d="M2.99937 10.355C1.57437 11.03 1.12437 12.83 1.87437 14.33L11.7744 34.055L16.7994 31.505L6.89937 11.78C6.14937 10.28 4.42437 9.68 2.99937 10.355Z"
+                                        fill="#FFDD67"></path>
+                                    <path
+                                        d="M2.99956 10.355C2.84956 10.43 2.69956 10.505 2.54956 10.655C3.82456 10.28 5.24956 10.955 5.92456 12.305L15.8246 32.03L16.7996 31.58L6.89956 11.78C6.14956 10.28 4.42456 9.68 2.99956 10.355Z"
+                                        fill="#EBA352"></path>
+                                    <path
+                                        d="M46.2744 22.2801C45.0744 19.9551 41.3244 20.1051 37.4994 24.3051C34.7994 27.2301 34.2744 28.2051 31.5744 28.1301V25.0551C31.5744 25.0551 25.7994 20.7801 14.3244 22.7301C14.3244 22.7301 7.79945 23.6301 7.79945 27.0801C7.79945 27.0801 6.67445 35.4051 8.99945 40.6551C12.4494 48.4551 30.1494 50.4801 35.6994 37.2051C36.8244 34.5801 39.0744 32.6301 41.0994 30.1551C43.4244 27.1551 47.5494 24.7551 46.2744 22.2801Z"
+                                        fill="#FFDD67"></path>
+                                    <path
+                                        d="M46.2745 22.28C46.0495 21.83 45.7495 21.53 45.3745 21.23C45.4495 21.305 45.5245 21.38 45.5245 21.53C46.7995 24.08 42.6745 26.405 40.1995 29.405C38.1745 31.88 35.9245 33.83 34.7995 36.455C29.9995 47.93 16.0495 47.93 10.1995 42.68C15.5245 48.68 30.5245 49.28 35.5495 37.205C36.6745 34.58 38.9245 32.63 40.9495 30.155C43.4245 27.155 47.5495 24.755 46.2745 22.28ZM32.3245 28.13C27.4495 26.33 18.7495 29.63 19.9495 38.405C19.9495 30.23 27.3745 28.205 31.4245 28.205C32.0245 28.13 32.3245 28.13 32.3245 28.13Z"
+                                        fill="#EBA352"></path>
+                                </svg>
+                            </h1>
+                            <h3 class="home_subtitle">Web (UI/UX) Designer</h3>
+                            <p class="home_description">
+                                可獨立設計網頁/站及切版(RWD)版面,慢熱的狗奴設計切版工作者
+                            </p>
+
+                            <!-- <a href="#services" class="button button-flex">
+                                services
+                                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
+                                        fill="var(--container-color)"></path>
+                                    <path
+                                        d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
+                                        fill="var(--container-color)"></path>
+                                </svg>
+                            </a> -->
+                        </div>
+                        <!-- home_data end -->
+                    </div>
+                    <!-- home_content end -->
+
+                    <div class="home_scroll" data-aos="fade-down">
+                        <a href="#about" class="home_scroll-button button-flex">
+                            <svg width="32px" height="32px" class="home__scroll-mouse" viewBox="0 0 247 390"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" style="
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 1.5;
+                                ">
+                                <path class="wheel" d="M123.359,79.775l0,72.843" style="
+                                    fill: none;
+                                    stroke: var(--title-color);
+                                    stroke-width: 20px;
+                                "></path>
+                                <path id="mouse"
+                                    d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                                    style="
+                                    fill: none;
+                                    stroke: var(--title-color);
+                                    stroke-width: 20px;
+                                "></path>
+                            </svg>
+                            <span class="home_scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                        </a>
+                    </div>
+                    <!-- home_scroll end -->
+                </div>
+                <!-- home_container end -->
+            </section>
+            <!-- =================== 關於 =================== -->
+            <section class="about section" id="about">
+                <h2 class="section_title" data-aos="fade-up">個人簡介</h2>
+                <span class="section_subtitle" data-aos="fade-up">關於Tuna</span>
+
+                <div class="about_container container grid">
+                    <img src="img/about.jpg" alt="" class="about_img">
+
+                    <div class="about_data">
+                        <div class="about_info grid">
+                            <div class="about_box">
+                                <i class='bx bx-briefcase-alt about_icon'></i>
+                                <h3 class="about_title">8+</h3>
+                                <span class="about_subtitle">Years <br /> experience</span>
+                            </div>
+
+                            <div class="about_box">
+                                <i class='bx bx-check-double about_icon'></i>
+                                <h3 class="about_title">35+</h3>
+                                <span class="about_subtitle">Completed <br /> project</span>
+                            </div>
+
+                            <div class="about_box">
+                                <i class='bx bx-buildings about_icon'></i>
+                                <h3 class="about_title">4+</h3>
+                                <span class="about_subtitle">Companies <br /> worked</span>
+                            </div>
+                        </div>
+                        <!-- about_info end -->
+
+                        <p class="about_description">
+                            平面設計師擔任近四年轉職到網頁設計師近三年，對網頁切版充滿好奇心即產生興趣，後到資策會進修前端工程師課程去解鎖更多未知的領域。
+                        </p>
+                        <a download="tuna_resume" href="assets/pdf/Tuna_resume+portfolio.pdf"
+                            class="button button-flex">
+                            Download resume
+                            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M15.25 22.7502H9.25C3.82 22.7502 1.5 20.4302 1.5 15.0002V9.00024C1.5 3.57024 3.82 1.25024 9.25 1.25024H14.25C14.66 1.25024 15 1.59024 15 2.00024C15 2.41024 14.66 2.75024 14.25 2.75024H9.25C4.64 2.75024 3 4.39024 3 9.00024V15.0002C3 19.6102 4.64 21.2502 9.25 21.2502H15.25C19.86 21.2502 21.5 19.6102 21.5 15.0002V10.0002C21.5 9.59024 21.84 9.25024 22.25 9.25024C22.66 9.25024 23 9.59024 23 10.0002V15.0002C23 20.4302 20.68 22.7502 15.25 22.7502Z"
+                                    fill="var(--container-color)"></path>
+                                <path
+                                    d="M22.25 10.7502H18.25C14.83 10.7502 13.5 9.42023 13.5 6.00023V2.00023C13.5 1.70023 13.68 1.42023 13.96 1.31023C14.24 1.19023 14.56 1.26023 14.78 1.47023L22.78 9.47023C22.99 9.68023 23.06 10.0102 22.94 10.2902C22.82 10.5702 22.55 10.7502 22.25 10.7502ZM15 3.81023V6.00023C15 8.58023 15.67 9.25023 18.25 9.25023H20.44L15 3.81023Z"
+                                    fill="var(--container-color)"></path>
+                                <path
+                                    d="M13.25 13.7502H7.25C6.84 13.7502 6.5 13.4102 6.5 13.0002C6.5 12.5902 6.84 12.2502 7.25 12.2502H13.25C13.66 12.2502 14 12.5902 14 13.0002C14 13.4102 13.66 13.7502 13.25 13.7502Z"
+                                    fill="var(--container-color)"></path>
+                                <path
+                                    d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
+                                    fill="var(--container-color)"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- about_data end -->
+                </div>
+                <!-- about_container end -->
+            </section>
+
+            <!-- =================== 專業技能 =================== -->
+            <section class="skills section" id="skills">
+                <h2 class="section_title" data-aos="fade-up">專業技能</h2>
+                <span class="section_subtitle" data-aos="fade-up">技能分類等級</span>
+
+                <div class="skills_container container grid">
+                    <!-- design  -->
+                    <div class="skills_content">
+                        <h3 class="skills_title">Design</h3>
+                        <p class="skills_subtitle">規劃網站版面設計</p>
+
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Photoshop</h3>
+                                        <span class="skills_level">熟悉</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Illustrator</h3>
+                                        <span class="skills_level">中階</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skills_group end -->
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Figma</h3>
+                                        <span class="skills_level">中階</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Canva</h3>
+                                        <span class="skills_level">熟悉</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+                            </div>
+                            <!-- skills_group end -->
+                        </div>
+                        <!-- skills_box end -->
+                    </div>
+                    <!-- skills_content end -->
+
+                    <!-- frontend -->
+                    <div class="skills_content">
+                        <h3 class="skills_title">Frontend</h3>
+                        <p class="skills_subtitle">RWD網頁切版及版控</p>
+
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">HTML5</h3>
+                                        <span class="skills_level">熟悉</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">CSS3</h3>
+                                        <span class="skills_level">熟悉</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Sass/SCSS</h3>
+                                        <span class="skills_level">中階</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Bootstrap</h3>
+                                        <span class="skills_level">中階</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+                            </div>
+                            <!-- skills_group end -->
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Javascript</h3>
+                                        <span class="skills_level">中階</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">jQuery</h3>
+                                        <span class="skills_level">中階</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">React</h3>
+                                        <span class="skills_level">基礎</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Git</h3>
+                                        <span class="skills_level">基礎</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+                            </div>
+                            <!-- skills_group end -->
+                        </div>
+                        <!-- skills_box end -->
+                    </div>
+                    <!-- skills_content end -->
+
+                    <!-- backend -->
+                    <div class="skills_content">
+                        <h3 class="skills_title">Backend</h3>
+                        <p class="skills_subtitle">串接第三方API</p>
+
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">PHP</h3>
+                                        <span class="skills_level">基礎</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Node.js</h3>
+                                        <span class="skills_level">基礎</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+
+                                <div class="skills_data">
+                                    <i class="bx bx-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">MySQL</h3>
+                                        <span class="skills_level">基礎</span>
+                                    </div>
+                                </div>
+                                <!-- skills_data end -->
+                            </div>
+                            <!-- skills_group end -->
+                        </div>
+                        <!-- skills_box end -->
+                    </div>
+                    <!-- skills_content end -->
+
+                </div>
+                <!-- skills_container end -->
+            </section>
+
+            <!-- =================== 相關經驗 =================== -->
+            <section class="qualification section" id="services">
+                <h2 class="section_title" data-aos="fade-up">相關經驗</h2>
+                <span class="section_subtitle" data-aos="fade-up">教育程度&工作經驗</span>
+
+                <div class="qualification_container container">
+                    <div class="qualification_tabs">
+                        <div class="qualification_button qualification_active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification_icon"></i>教育程度
+                        </div>
+
+                        <div class="qualification_button" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification_icon"></i>工作經驗
+                        </div>
+                    </div>
+                    <!-- qualification_tabs end -->
+
+                    <!-- 主選內容 -->
+                    <div class="qualification_sections">
+                        <!-- 教育程度 -->
+                        <div class="qualification_content qualification_content-active" data-content id="education">
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">台北城市科技大學</h3>
+                                    <span class="qualification_subtitle">數位多媒體設計系</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2011-2015
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">復興商工</h3>
+                                    <span class="qualification_subtitle">廣告設計系</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2008-2011
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- qualification_content end -->
+
+                        <!-- 工作經驗 -->
+                        <div class="qualification_content" data-content id="work">
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">德榕企業有限公司</h3>
+                                    <span class="qualification_subtitle">創意視覺網頁設計師</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2022/05-2022/10
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">資策會</h3>
+                                    <span class="qualification_subtitle">前端工程師養成班</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2021/06-2021/12
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">金石堂網路書店</h3>
+                                    <span class="qualification_subtitle">網頁設計師</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2019/12-2021/05
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">長勱有限公司</h3>
+                                    <span class="qualification_subtitle">業務助理兼平面設計</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2017/10-2019/08
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">采億實業有限公司</h3>
+                                    <span class="qualification_subtitle">平面設計</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>2015/07-2017/07
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- qualification_content end -->
+                    </div>
+
+                </div>
+                <!-- qualification_container end -->
+            </section>
+
+            <!-- =================== 作品集 =================== -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section_title" data-aos="fade-up">作品集</h2>
+                <span class="section_subtitle" data-aos="fade-up">網頁設計&切版</span>
+
+                <div class="portfolio_container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- ========= 作品集_01 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work01.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD網站規劃設計</h3>
+                                <p class="portfolio_description">使用Photoshop規劃五頁網站</p>
+                                <a href="http://www.cmylaser.com/default.aspx" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_02 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work02.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">網頁RWD設計</h3>
+                                <p class="portfolio_description">使用Photoshop規劃單頁式網頁</p>
+                                <a href="https://event.threecosmetics.com.tw/202206/" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_03 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work03.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">網頁RWD設計</h3>
+                                <p class="portfolio_description">使用Photoshop規劃單頁式網頁</p>
+                                <a href="https://www.ilovermk.com.tw/2022event/wtreatmentoil/" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_04 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work04.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">後台Prototype設計</h3>
+                                <p class="portfolio_description">使用Figma進行Prototype設計</p>
+                                <a href="https://www.figma.com/proto/olmNULBx3H0xPVv3zbWntB/ski?node-id=135-400&starting-point-node-id=135%3A400"
+                                    target="_blank" class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_05 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work05.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD單頁式切版</h3>
+                                <p class="portfolio_description">運用Html5 & CSS3進行切版</p>
+                                <a href="https://tuna0014hua.github.io/iii_css/css/index.html" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_06 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work06.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD單頁式切版</h3>
+                                <p class="portfolio_description">運用Bootstrap進行切版</p>
+                                <a href="https://tuna0014hua.github.io/iii_css/bootstrap_HW/index.html" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_07 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work07.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD單頁式切版</h3>
+                                <p class="portfolio_description">串接第三方API(Facebook+line)</p>
+                                <a href="https://event.gvm.com.tw/202211_pfizer/" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_08 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work08.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD單頁式切版</h3>
+                                <p class="portfolio_description">運用 grid 進行切版</p>
+                                <a href="http://puudeng.com.tw/nuplus/" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_09 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work09.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD單頁式設計+切版</h3>
+                                <p class="portfolio_description">使用Photoshop設計，<br />網頁使用AOS套件產生動態效果</p>
+                                <a href="https://www.ilovermk.com.tw/2022event/Anniversary/" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                        <!-- ========= 作品集_10 ========= -->
+                        <div class="portfolio_content swiper-slide">
+                            <img src="img/work10.jpg" alt="" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">RWD單頁式設計+切版</h3>
+                                <p class="portfolio_description">使用Photoshop設計，<br />網頁使用AOS套件產生動態效果</p>
+                                <a href="https://reurl.cc/KMWrAe" target="_blank"
+                                    class="button button-flex button-small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            <!-- portfolio_data end -->
+                        </div>
+                        <!-- portfolio_content end -->
+
+                    </div>
+
+                    <!-- add arrow -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- add pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- portfolio_container end -->
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer_container container">
+                <h1 class="footer_title">Tuna</h1>
+
+                <ul class="footer_list">
+                    <li>
+                        <a href="#skills" class="footer_link">專業技能</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#services" class="footer_link">相關經驗</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer_link">作品集</a>
+                    </li>
+                </ul>
+
+                <div class="footer_social">
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/wei-yun-hua-700164233/" class="footer_social-link"
+                        target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <!-- codepen -->
+                    <a href="https://codepen.io/tuna1104/pens/public" class="footer_social-link" target="_blank">
+                        <i class='bx bxl-codepen'></i>
+                    </a>
+
+                    <!-- github -->
+                    <a href="https://github.com/tuna0014hua" class="footer_social-link" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+
+                <span class="footer_copy">
+                    Copyright &#169; 2023 Tuna All rights reserved
+                </span>
+            </div>
+        </footer>
+
+        <!-- scroll up -->
+        <a href="#" class="scroll_up" id="scrollUp">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
+    </div>
+
+    <!-- swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+
+    <!-- main -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
